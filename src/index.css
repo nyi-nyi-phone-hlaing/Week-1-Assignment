@@ -1,13 +1,84 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body,
+.App {
+  width: 100%;
+  height: 100vh;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Main {
+  width: 800px;
+  height: 100vh;
+}
+
+.form-container {
+  width: 100%;
+  padding: 10px;
+  background: whitesmoke;
+}
+
+.form-container h1 {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.form-container form {
+  width: 100%;
+}
+
+.form-container form .row {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.form-container form .row label {
+  width: 40%;
+}
+
+.form-container form .row input {
+  width: 60%;
+  height: 100%;
+  outline: none;
+  padding: 0 15px;
+}
+
+.form-container form button {
+  padding: 5px 15px;
+  background: cornflowerblue;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  color: #fff;
+  display: block;
+  margin: 10px 0 0 auto;
+}
+
+.list-container {
+  width: 100%;
+  height: calc(100vh - 250px);
+  padding: 10px;
+  overflow: auto;
+}
+
+.list-container .card {
+  background: cornflowerblue;
+  margin: 8px 0;
+  padding: 10px;
+  color: #fff;
 }
